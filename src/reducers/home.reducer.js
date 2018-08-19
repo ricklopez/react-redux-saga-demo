@@ -12,8 +12,6 @@ export default function(state = {header: 'Hello World!', counter: 0}, action) {
       return newState;
     case types.DECREMENT:
       return objectAssign({}, state, {counter: state.counter - 1});
-    case types.INCREMENT_ASYNC:
-      return objectAssign({}, state, {counter: state.counter + 1});
     default:
       return state;
   }
